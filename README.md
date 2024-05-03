@@ -15,7 +15,6 @@ I'm currently working on flask with SQLAlchemy ,alembic and connexion<br>I'm loo
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=F3rNaNDEZ57&theme=radical&no-frame=false&no-bg=true&margin-w=4)
 
----
 [![](https://visitcount.itsvg.in/api?id=F3rNaNDEZ57&icon=0&color=0)](https://visitcount.itsvg.in)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->

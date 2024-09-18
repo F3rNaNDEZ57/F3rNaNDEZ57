@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on: Backend development, Python projects, computer vision, and image recognition.<br>🧑‍🤝‍🧑 I’m looking to collaborate on: Full-stack development, especially with Python (Flask), ReactJS, and Rust.<br>🤝 I’m looking for help with: Image recognition and minutiae detection algorithms.<br>🌱 I’m currently learning: Rust and advanced backend technologies.<br>💬 Ask me about: Full-stack development, APIs, and AI-driven educational platforms.<br><br>
+🔭 I’m currently working on: Backend development, Python projects, computer vision, and image recognition.<br>🧑‍🤝‍🧑 I’m looking to collaborate on: Full-stack development, especially with Python (Flask/Django), NodeJS, ExpressJS ReactJS, and Rust.<br>🤝 I’m looking for help with: Image recognition and minutiae detection algorithms.<br>🌱 I’m currently learning: Rust and advanced backend technologies.<br>💬 Ask me about: Full-stack development, APIs, and AI-driven educational platforms.<br><br>
 
 
 ## 🌐 Socials:

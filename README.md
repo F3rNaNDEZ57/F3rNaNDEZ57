@@ -1,8 +1,8 @@
 <h1 align="center">Kavindu Fernando</h1>
-<h3 align="center">AI Engineer — Production LLM Systems &amp; Agents</h3>
+<h3 align="center">AI Engineer — Production LLM Systems &amp; Agents · Computer Vision Researcher (3D Gaussian Splatting)</h3>
 
 <p align="center">
-Building the tool, context, and agent layer for an AI assistant live across 60+ enterprise accounts and 1,500+ users at <a href="https://www.velaris.io/">Velaris</a>. B.Sc. (Hons) IT, University of Moratuwa.
+Building the tool, context, and agent layer for an AI assistant live across 60+ enterprise accounts and 1,500+ users at <a href="https://www.velaris.io/">Velaris</a>. Research exchange at Shibaura Institute of Technology on capture guidance for 3D Gaussian Splatting. B.Sc. (Hons) IT, University of Moratuwa.
 </p>
 
 <p align="center">
@@ -27,6 +27,9 @@ AI engineer at **Velaris**, a B2B customer success SaaS platform, shipping produ
 - ⚡ **API efficiency** — redesigned a Salesforce sync around bulk operations, cutting API calls per sync from ~60,000 to ~300 (**99.5% reduction**) and eliminating recurring rate-limit failures.
 
 ### Research
+
+**3D Gaussian Splatting — Capture Guidance** *(Research Exchange, Shibaura Institute of Technology, Tokyo — Sep–Oct 2025)*
+Designed a real-time capture-guidance system for 3D Gaussian Splatting that steers users toward coverage-complete scans using a 12-bin angular coverage ring driven by optical-flow motion tracking, with live coaching thresholds for blur, exposure drift, and motion parallax — cutting redundant frames while preserving reconstruction coverage. Validated RGB-only feasibility on a consumer smartphone with no depth sensor (iPhone 14 Pro Max); scoped a drone-based autonomous capture path-planning extension and presented the work at an internal review. Also maintain a working fork of **[2D Gaussian Splatting](https://github.com/F3rNaNDEZ57/2d-gaussian-splatting)** (SIGGRAPH '24) as part of this work.
 
 **[VibeCheck](https://github.com/FYP-Epsilon/Vibe-Check/wiki)** — Post-hoc formal verification of LLM-generated code against BPMN specifications, catching semantic bugs that pass unit tests. Owned the Verified IR Extraction module: AST control-flow extraction, Z3 concolic execution, and differential tracing, backed by 246 automated tests. **99.5% genuine-bug detection** at a 5.9% false-alarm rate across 427 synthetic mutants; **100% structural extraction accuracy** on all 101 FLOW-BENCH programs.
 

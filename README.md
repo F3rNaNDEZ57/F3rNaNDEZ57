@@ -1,19 +1,73 @@
-# 💫 About Me:
-🔭 I’m currently working on: Backend development, Python projects, computer vision, and image recognition.<br>🧑‍🤝‍🧑 I’m looking to collaborate on: Full-stack development, especially with Python (Flask/Django), NodeJS, ExpressJS ReactJS, and Rust.<br>🤝 I’m looking for help with: Image recognition and minutiae detection algorithms.<br>🌱 I’m currently learning: Rust and advanced backend technologies.<br>
+<h1 align="center">Kavindu Fernando</h1>
+<h3 align="center">AI Engineer — Production LLM Systems &amp; Agents</h3>
 
+<p align="center">
+Building the tool, context, and agent layer for an AI assistant live across 60+ enterprise accounts and 1,500+ users at <a href="https://www.velaris.io/">Velaris</a>. B.Sc. (Hons) IT, University of Moratuwa.
+</p>
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/fernando-kavindu) 
-
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=flat&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=flat&logo=c%2B%2B&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=flat&logo=csharp&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=flat&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=flat&logo=php&logoColor=white) ![R](https://img.shields.io/badge/r-%23276DC3.svg?style=flat&logo=r&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=flat&logo=gnu-bash&logoColor=white) ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=flat&logo=rust&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=flat&logo=markdown&logoColor=white) ![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=flat&logo=windows-terminal&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white) ![YAML](https://img.shields.io/badge/yaml-%23ffffff.svg?style=flat&logo=yaml&logoColor=151515) ![GithubPages](https://img.shields.io/badge/github%20pages-121013?style=flat&logo=github&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=flat&logo=microsoftazure&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=flat&logo=firebase) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=flat&logo=google-cloud&logoColor=white) ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=flat&logo=heroku&logoColor=white) ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=flat&logo=render&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=flat&logo=vercel&logoColor=white) ![PythonAnywhere](https://img.shields.io/badge/pythonanywhere-%232F9FD7.svg?style=flat&logo=pythonanywhere&logoColor=151515) ![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=flat&logo=anaconda&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=flat&logo=django&logoColor=white) ![Expo](https://img.shields.io/badge/expo-1C1E24?style=flat&logo=expo&logoColor=#D04A37) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=flat&logo=express&logoColor=%2361DAFB) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=flat&logo=flask&logoColor=white) ![Hugo](https://img.shields.io/badge/Hugo-black.svg?style=flat&logo=Hugo) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=flat&logo=npm&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=flat&logo=node.js&logoColor=white) ![Node-RED](https://img.shields.io/badge/Node--RED-%238F0000.svg?style=flat&logo=node-red&logoColor=white) ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=flat&logo=opencv&logoColor=white) ![OpenGL](https://img.shields.io/badge/OpenGL-%23FFFFFF.svg?style=flat&logo=opengl) ![RabbitMQ](https://img.shields.io/badge/rabbitmq-FF6600?style=flat&logo=rabbitmq&logoColor=white) ![ROS](https://img.shields.io/badge/ros-%230A0FF9.svg?style=flat&logo=ros&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB) ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB) ![Socket.io](https://img.shields.io/badge/Socket.io-black?style=flat&logo=socket.io&badgeColor=010101) ![WordPress](https://img.shields.io/badge/WordPress-%23117AC9.svg?style=flat&logo=WordPress&logoColor=white) ![Gunicorn](https://img.shields.io/badge/gunicorn-%298729.svg?style=flat&logo=gunicorn&logoColor=white) ![Jenkins](https://img.shields.io/badge/jenkins-%232C5263.svg?style=flat&logo=jenkins&logoColor=white) ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=flat&logo=nginx&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=flat&logo=firebase&logoColor=ffcd34) ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=flat&logo=microsoft%20sql%20server&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=flat&logo=mysql&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=flat&logo=postgresql&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=flat&logo=sqlite&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white) ![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=flat&logo=Sequelize&logoColor=white) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=flat&logo=Keras&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=flat&logo=Matplotlib&logoColor=black) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=flat&logo=pandas&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=flat&logo=plotly&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat&logo=scikit-learn&logoColor=white) ![Scipy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=flat&logo=scipy&logoColor=%white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat&logo=TensorFlow&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=flat&logo=githubactions&logoColor=white) ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat&logo=Arduino&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat&logo=docker&logoColor=white) ![Mosquitto](https://img.shields.io/badge/mosquitto-%233C5280.svg?style=flat&logo=eclipsemosquitto&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white) ![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=flat&logo=swagger&logoColor=white) ![TOR](https://img.shields.io/badge/tor-%237E4798.svg?style=flat&logo=tor-project&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-streak-stats.herokuapp.com/?user=F3rNaNDEZ57&theme=dark&hide_border=false)<br/>
-
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=F3rNaNDEZ57&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+<p align="center">
+<a href="https://linkedin.com/in/fernando-kavindu"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="http://fernandokavindu.me/"><img src="https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
+<a href="mailto:kavindufernando.official@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+<img src="https://img.shields.io/badge/Colombo%2C%20Sri%20Lanka-4B5563?style=flat-square&logo=googlemaps&logoColor=white" alt="Location">
+</p>
 
 ---
-[![](https://visitcount.itsvg.in/api?id=F3rNaNDEZ57&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+### About
+
+AI engineer at **Velaris**, a B2B customer success SaaS platform, shipping production software since October 2024 and owning LLM/agent engineering since December 2025. Joined during my third year of university and was promoted after 14 months. I own tool design, context management, and output quality for **Velaris Copilot**, and I'm graduating with a B.Sc. (Hons) in Information Technology from the University of Moratuwa in August 2026.
+
+### What I've shipped
+
+- 🧠 **Context management** — shipped rolling-history summarisation that took usable conversation depth from ~5 turns to 20–25 turns (4–5x), eliminating context-overflow errors. Verified across 100+ production conversations.
+- 💸 **Cost reduction via fine-tuning** — rebuilt a key-point extraction pipeline on a fine-tuned Gemma model in place of Claude Haiku, cutting daily inference spend from ~$200 to ~$15/day (**92% reduction**) while holding 99% output agreement with the prior model.
+- 🤖 **Autonomous agents** — built renewal/expansion agents that draft and send email replies with no human authoring step, adopted by ~50% of the customer base within a month of launch.
+- 🔌 **MCP surface** — maintain the Velaris MCP client and a skill-based MCP server exposing Copilot tooling to external clients including Claude and ChatGPT.
+- ⚡ **API efficiency** — redesigned a Salesforce sync around bulk operations, cutting API calls per sync from ~60,000 to ~300 (**99.5% reduction**) and eliminating recurring rate-limit failures.
+
+### Research
+
+**[VibeCheck](https://github.com/FYP-Epsilon/Vibe-Check/wiki)** — Post-hoc formal verification of LLM-generated code against BPMN specifications, catching semantic bugs that pass unit tests. Owned the Verified IR Extraction module: AST control-flow extraction, Z3 concolic execution, and differential tracing, backed by 246 automated tests. **99.5% genuine-bug detection** at a 5.9% false-alarm rate across 427 synthetic mutants; **100% structural extraction accuracy** on all 101 FLOW-BENCH programs.
+
+### Tech stack
+
+**LLM &amp; Agents**
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white) ![MCP](https://img.shields.io/badge/Model_Context_Protocol-000000?style=flat-square) ![FAISS](https://img.shields.io/badge/FAISS-4B5563?style=flat-square) ![RAG](https://img.shields.io/badge/RAG-4B5563?style=flat-square)
+
+**Languages**
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+
+**Backend &amp; Frontend**
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+
+**Cloud &amp; Data**
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=flat-square&logo=snowflake&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
+
+### Featured projects
+
+| Project | Description |
+|---|---|
+| **[kapruka-agent](https://github.com/F3rNaNDEZ57/kapruka-agent)** | Multilingual shopping assistant (Sinhala + 140 languages) pairing a live e-commerce MCP server with an LLM agent for product discovery and ordering. NVIDIA NIM, Gemma 3 27B, Pydantic AI, FastAPI/SSE, React. Built for the Kapruka Agent Challenge 2026. |
+| **[Ferrite](https://github.com/F3rNaNDEZ57/Ferrite)** | A memory-safe, Rust-native reimplementation of the Cheat Engine idea. |
+| **[self-evolving-organism](https://github.com/F3rNaNDEZ57/self-evolving-organism)** | Experimental system exploring self-modifying/evolving program behaviour in Python. |
+| **[GraphicsAlgoVisualizer](https://github.com/F3rNaNDEZ57/GraphicsAlgoVisualizer)** | Visualization tool for testing and demonstrating computer graphics algorithms. |
+| **[VibeCheck](https://github.com/FYP-Epsilon/Vibe-Check/wiki)** | Formal verification pipeline for LLM-generated code — see Research above. |
+
+### Awards
+
+🏆 **TADHack 2024** — Global Top 10, 1st place in Sri Lanka
+🥈 **Hackventure 2024** — 2nd place &amp; Most Innovative Team
+🏅 **CodeRush 2023** — 4th place (intra-university competitive programming)
+🎖️ Finalist — Enigma 2024, TADHack 2023, SLIIT Codefest
+
+### GitHub stats
+
+<p align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=F3rNaNDEZ57&show_icons=true&theme=default&hide_border=true&hide_title=true" alt="GitHub Stats" height="165">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=F3rNaNDEZ57&hide_border=true" alt="GitHub Streak" height="165">
+</p>
+
+---
+
+<p align="center"><sub>Open to applied AI / LLM engineering roles — reach out on <a href="https://linkedin.com/in/fernando-kavindu">LinkedIn</a>.</sub></p>

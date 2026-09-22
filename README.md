@@ -1,61 +1,90 @@
 <h1 align="center">Kavindu Fernando</h1>
-<h3 align="center">AI Engineer — Production LLM Systems &amp; Agents · Computer Vision Researcher (3D Gaussian Splatting)</h3>
+<h3 align="center">Computer Vision Researcher — 3D Gaussian Splatting · Real-Time Capture &amp; Reconstruction</h3>
 
 <p align="center">
-Building the tool, context, and agent layer for an AI assistant live across 60+ enterprise accounts and 1,500+ users at <a href="https://www.velaris.io/">Velaris</a>. Research exchange at Shibaura Institute of Technology on capture guidance for 3D Gaussian Splatting. B.Sc. (Hons) IT, University of Moratuwa.
+AI Research Engineer at <a href="https://synra.ne.jp/">SYNRA Nep</a>, working on radiance-field reconstruction: 2DGS/3DGS, real-time Gaussian capture, and converting splats into simulation-grade geometry. Previously research exchange at Shibaura Institute of Technology, Tokyo. B.Sc. (Hons) IT, University of Moratuwa.
 </p>
 
 <p align="center">
 <a href="https://linkedin.com/in/fernando-kavindu"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 <a href="http://fernandokavindu.me/"><img src="https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
 <a href="mailto:kavindufernando.official@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
-<img src="https://img.shields.io/badge/Colombo%2C%20Sri%20Lanka-4B5563?style=flat-square&logo=googlemaps&logoColor=white" alt="Location">
+<img src="https://img.shields.io/badge/Research-3D%20Gaussian%20Splatting-4B5563?style=flat-square" alt="Research area">
 </p>
 
 ---
 
-### About
+### Research focus
 
-AI engineer at **Velaris**, a B2B customer success SaaS platform, shipping production software since October 2024 and owning LLM/agent engineering since December 2025. Joined during my third year of university and was promoted after 14 months. I own tool design, context management, and output quality for **Velaris Copilot**, and I'm graduating with a B.Sc. (Hons) in Information Technology from the University of Moratuwa in August 2026.
+I work on **3D Gaussian Splatting** — specifically the gap between splats as a *rendering* primitive and splats as a *simulation* primitive.
 
-### What I've shipped
+Gaussian splatting produces photorealistic novel views in minutes, but a cloud of anisotropic Gaussians is not something a physics engine, an acoustic solver, or a robotics simulator can consume. The standard answer is to extract a mesh, and the standard mesh-extraction metric is Chamfer distance — which is the wrong metric when the downstream consumer cares about watertightness, metric scale, and surface planarity rather than average point-to-surface error. A mesh with excellent Chamfer distance can still be unusable for simulation.
 
-- 🧠 **Context management** — shipped rolling-history summarisation that took usable conversation depth from ~5 turns to 20–25 turns (4–5x), eliminating context-overflow errors. Verified across 100+ production conversations.
-- 💸 **Cost reduction via fine-tuning** — rebuilt a key-point extraction pipeline on a fine-tuned Gemma model in place of Claude Haiku, cutting daily inference spend from ~$200 to ~$15/day (**92% reduction**) while holding 99% output agreement with the prior model.
-- 🤖 **Autonomous agents** — built renewal/expansion agents that draft and send email replies with no human authoring step, adopted by ~50% of the customer base within a month of launch.
-- 🔌 **MCP surface** — maintain the Velaris MCP client and a skill-based MCP server exposing Copilot tooling to external clients including Claude and ChatGPT.
-- ⚡ **API efficiency** — redesigned a Salesforce sync around bulk operations, cutting API calls per sync from ~60,000 to ~300 (**99.5% reduction**) and eliminating recurring rate-limit failures.
+That gap is the through-line of everything below.
 
-### Research
+---
 
-**3D Gaussian Splatting — Capture Guidance** *(Research Exchange, Shibaura Institute of Technology, Tokyo — Sep–Oct 2025)*
-Designed a real-time capture-guidance system for 3D Gaussian Splatting that steers users toward coverage-complete scans using a 12-bin angular coverage ring driven by optical-flow motion tracking, with live coaching thresholds for blur, exposure drift, and motion parallax — cutting redundant frames while preserving reconstruction coverage. Validated RGB-only feasibility on a consumer smartphone with no depth sensor (iPhone 14 Pro Max); scoped a drone-based autonomous capture path-planning extension and presented the work at an internal review. Also maintain a working fork of **[2D Gaussian Splatting](https://github.com/F3rNaNDEZ57/2d-gaussian-splatting)** (SIGGRAPH '24) as part of this work.
+### Active work
 
-**[VibeCheck](https://github.com/FYP-Epsilon/Vibe-Check/wiki)** — Post-hoc formal verification of LLM-generated code against BPMN specifications, catching semantic bugs that pass unit tests. Owned the Verified IR Extraction module: AST control-flow extraction, Z3 concolic execution, and differential tracing, backed by 246 automated tests. **99.5% genuine-bug detection** at a 5.9% false-alarm rate across 427 synthetic mutants; **100% structural extraction accuracy** on all 101 FLOW-BENCH programs.
+#### Splat → polygon without losing simulation fidelity
+
+The core question: how do you convert a Gaussian representation into polygonal geometry that a simulator can actually trust? Current work covers 2DGS-based surface extraction, task-specific fidelity metrics (enclosure, volume and scale error, decimetre-scale planarity) as alternatives to Chamfer-only evaluation, and systematic ablation of the failure modes — mesh leakage, scale drift, material misassignment — that break downstream simulation while leaving reconstruction metrics looking healthy.
+
+#### Gaussian splatting for blind and low-vision assistance
+
+An applied direction with two coupled halves:
+
+- **A map you can ask questions of** — a persistent, language-embedded Gaussian map of a venue, queried in natural language. Because answers come from the map rather than the current frame, they work beyond field of view and around corners.
+- **Rendering a room as sound** — 2DGS → watertight mesh → material assignment → geometric acoustics → binaural audio. Doorways become beacons; walls audibly occlude them.
+
+The two compose: the language field supplies semantically labelled points to place sound at, and the extracted geometry determines how that sound travels. A beacon that sounds *muffled because there is a wall in the way* is not something a geometry-blind navigation system can produce. The acoustic layer models the static shell only — people and temporary obstacles are invisible to it — so it is designed as an enrichment layer, never a safety-critical one.
+
+Early stage; running feasibility experiments on RIR simulation error and spatial-audio localization accuracy before committing to the full design.
+
+#### Real-time capture guidance for 3DGS
+*Research exchange, Shibaura Institute of Technology, Tokyo — Sep–Oct 2025*
+
+A real-time system that steers a user toward coverage-complete scans instead of letting them discover gaps after training. A 12-bin angular coverage ring driven by optical-flow motion tracking, with live coaching thresholds for blur, exposure drift, and motion parallax — cutting redundant frames while preserving reconstruction coverage. Validated RGB-only feasibility on a consumer smartphone with no depth sensor (iPhone 14 Pro Max), scoped a drone-based autonomous capture path-planning extension, and presented at an internal review.
+
+---
+
+### Research code & publications
+
+| Work | Description |
+|---|---|
+| **[2D Gaussian Splatting](https://github.com/F3rNaNDEZ57/2d-gaussian-splatting)** | Working fork of 2DGS (SIGGRAPH '24), used as the surface-extraction backbone for the splat→mesh experiments above. |
+| **[VibeCheck](https://github.com/FYP-Epsilon/Vibe-Check/wiki)** | Post-hoc formal verification of LLM-generated code against BPMN specifications, catching semantic bugs that pass unit tests. I owned the Verified IR Extraction module: AST control-flow extraction, Z3 concolic execution, and differential tracing, backed by 246 automated tests. **99.5% genuine-bug detection** at a 5.9% false-alarm rate across 427 synthetic mutants; **100% structural extraction accuracy** on all 101 FLOW-BENCH programs. |
+| **[GraphicsAlgoVisualizer](https://github.com/F3rNaNDEZ57/GraphicsAlgoVisualizer)** | Visualization tool for testing and demonstrating computer graphics algorithms. |
+
+---
 
 ### Tech stack
+
+**3D &amp; Vision**
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![CUDA](https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white) ![3DGS](https://img.shields.io/badge/3D_Gaussian_Splatting-4B5563?style=flat-square) ![2DGS](https://img.shields.io/badge/2D_Gaussian_Splatting-4B5563?style=flat-square) ![COLMAP](https://img.shields.io/badge/COLMAP-4B5563?style=flat-square) ![Open3D](https://img.shields.io/badge/Open3D-4B5563?style=flat-square) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white) ![Blender](https://img.shields.io/badge/Blender-E87D0D?style=flat-square&logo=blender&logoColor=white)
+
+**Languages**
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
 
 **LLM &amp; Agents**
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white) ![MCP](https://img.shields.io/badge/Model_Context_Protocol-000000?style=flat-square) ![FAISS](https://img.shields.io/badge/FAISS-4B5563?style=flat-square) ![RAG](https://img.shields.io/badge/RAG-4B5563?style=flat-square)
 
-**Languages**
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+**Infrastructure**
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 
-**Backend &amp; Frontend**
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+---
 
-**Cloud &amp; Data**
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=flat-square&logo=snowflake&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
+### Engineering background
 
-### Featured projects
+Before moving to research full time, I spent two years shipping production LLM systems at [Velaris](https://www.velaris.io/), a B2B customer success platform — owning tool design, context management, and output quality for Velaris Copilot across 60+ enterprise accounts and 1,500+ users.
 
-| Project | Description |
-|---|---|
-| **[kapruka-agent](https://github.com/F3rNaNDEZ57/kapruka-agent)** | Multilingual shopping assistant (Sinhala + 140 languages) pairing a live e-commerce MCP server with an LLM agent for product discovery and ordering. NVIDIA NIM, Gemma 3 27B, Pydantic AI, FastAPI/SSE, React. Built for the Kapruka Agent Challenge 2026. |
-| **[Ferrite](https://github.com/F3rNaNDEZ57/Ferrite)** | A memory-safe, Rust-native reimplementation of the Cheat Engine idea. |
-| **[self-evolving-organism](https://github.com/F3rNaNDEZ57/self-evolving-organism)** | Experimental system exploring self-modifying/evolving program behaviour in Python. |
-| **[GraphicsAlgoVisualizer](https://github.com/F3rNaNDEZ57/GraphicsAlgoVisualizer)** | Visualization tool for testing and demonstrating computer graphics algorithms. |
-| **[VibeCheck](https://github.com/FYP-Epsilon/Vibe-Check/wiki)** | Formal verification pipeline for LLM-generated code — see Research above. |
+- 🧠 **Context management** — shipped rolling-history summarisation that took usable conversation depth from ~5 turns to 20–25 turns (4–5x), eliminating context-overflow errors. Verified across 100+ production conversations.
+- 💸 **Cost reduction via fine-tuning** — rebuilt a key-point extraction pipeline on a fine-tuned Gemma model in place of Claude Haiku, cutting daily inference spend from ~$200 to ~$15/day (**92% reduction**) while holding 99% output agreement with the prior model.
+- ⚡ **API efficiency** — redesigned a Salesforce sync around bulk operations, cutting API calls per sync from ~60,000 to ~300 (**99.5% reduction**) and eliminating recurring rate-limit failures.
+
+Other things I've built: **[kapruka-agent](https://github.com/F3rNaNDEZ57/kapruka-agent)** (multilingual shopping assistant, NVIDIA NIM + Gemma 3 27B + Pydantic AI), **[Ferrite](https://github.com/F3rNaNDEZ57/Ferrite)** (memory-safe Rust reimplementation of the Cheat Engine idea), and **[self-evolving-organism](https://github.com/F3rNaNDEZ57/self-evolving-organism)** (experiments in self-modifying program behaviour).
+
+---
 
 ### Awards
 
@@ -63,6 +92,8 @@ Designed a real-time capture-guidance system for 3D Gaussian Splatting that stee
 🥈 **Hackventure 2024** — 2nd place &amp; Most Innovative Team
 🏅 **CodeRush 2023** — 4th place (intra-university competitive programming)
 🎖️ Finalist — Enigma 2024, TADHack 2023, SLIIT Codefest
+
+---
 
 ### GitHub stats
 
@@ -73,4 +104,4 @@ Designed a real-time capture-guidance system for 3D Gaussian Splatting that stee
 
 ---
 
-<p align="center"><sub>Open to applied AI / LLM engineering roles — reach out on <a href="https://linkedin.com/in/fernando-kavindu">LinkedIn</a>.</sub></p>
+<p align="center"><sub>Open to research collaboration on Gaussian splatting, neural reconstruction, and simulation-grade 3D — reach out on <a href="https://linkedin.com/in/fernando-kavindu">LinkedIn</a>.</sub></p>
